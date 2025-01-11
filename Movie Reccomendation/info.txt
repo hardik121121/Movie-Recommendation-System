@@ -1,0 +1,48 @@
+Movie Recommendation System - Info.txt
+======================================
+
+App Description:
+----------------
+This is a **Movie Recommendation System** that uses content-based filtering to recommend similar movies based on the title you provide. 
+It analyzes the genre and overview of a movie and finds the top 5 most similar movies using **cosine similarity**.
+
+Features:
+---------
+- **Content-Based Filtering**: Recommends movies based on the similarity of genre and movie overview.
+- **Cosine Similarity**: Measures the similarity between movies based on their tags (genre + overview).
+- **User-Friendly UI**: Built with **Streamlit** for an interactive, easy-to-use interface.
+
+How to Use:
+------------
+1. **Enter a Movie Title**: Type in the title of any movie you want to find recommendations for.
+2. **Get Recommendations**: Based on the movie you input, the system will suggest the top 5 similar movies.
+3. **Enjoy**: Get inspired and find new movies to watch! 🍿
+
+Installation Instructions:
+---------------------------
+1. Install the required libraries:
+   - **pandas**: `pip install pandas`
+   - **numpy**: `pip install numpy`
+   - **sklearn**: `pip install scikit-learn`
+   - **streamlit**: `pip install streamlit`
+
+2. Download or clone the repository containing this app and the `dataset.csv` file.
+
+3. Run the Streamlit app:
+   - Open the terminal, navigate to the directory containing the app, and type:
+     ```
+     streamlit run streamlit_app.py
+     ```
+4. Open your browser and enjoy the app at `http://localhost:8501`.
+
+Notes:
+------
+- The movie dataset (`dataset.csv`) should be in the same directory as the app for it to work correctly.
+- The dataset contains various movie details, including movie title, genre, overview, and more.
+
+Acknowledgments:
+----------------
+- This recommendation system uses **cosine similarity** from the `sklearn` library to find similar movies.
+- The **CountVectorizer** from `sklearn` is used to transform the text data (movie genres and overviews) into a feature matrix.
+
+For more information or to contribute to the project, please reach out to [Your Name or Contact Information].
